@@ -1,0 +1,23 @@
+{
+  "name": "o2obnb",
+  "version": "1.0.0",
+  "description": "O2OBnB Blockchain-Based AirBnB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o2oprotocol/o2obnb.git"
+  },
+  "keywords": [
+    "blockchain",
+    "airbnb"
+  ],
+  "author": "O2OProtocol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/o2oprotocol/o2obnb/issues"
+  },
+  "homepage": "https://github.com/o2oprotocol/o2obnb#readme"
+}
