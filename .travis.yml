@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "8.10.0"
+cache:
+  directories:
+  - node_modules
+before_script:
+  - node --version
+install:
+  - npm install
+script:
+  - npm run build
+  - npm run test
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: ./bin/deploy.sh
+    email: o2oprotocol101@gmail.com
+    on:
+      all_branches: true
+      repo: o2oprotocol/o2obnb
+env:
+ - NODE_ENV=development
+notifications:
+  email: true
+after_failure: cat /home/travis/build/o2oprotocol/o2obnb/npm-debug.log
